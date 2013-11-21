@@ -3,16 +3,16 @@
 
 <extension version="2.5" type="template" client="site" method="upgrade">
 	
-	<name>frontend</name><!-- name the template -->
-	<creationDate>xxxx-xx-xx</creationDate><!-- the date your are beginn to code -->
-	<author>your name</author><!-- your name (oops, I repeat myself) -->
-	<copyright>Copyright © xxxx example.com</copyright><!-- for who you are coding -->
-	<authorEmail>your.name@example.com</authorEmail><!-- your email address -->
-	<authorUrl>http://www.example.com</authorUrl><!-- your url -->
-	<version>1.0.0</version><!-- give your template a number -->
+	<name>DyWeb</name><!-- name the template -->
+	<creationDate>2013-11-21</creationDate><!-- the date your are beginn to code -->
+	<author>tq5124</author><!-- your name (oops, I repeat myself) -->
+	<copyright>Copyright ©dongyueweb.com</copyright><!-- for who you are coding -->
+	<authorEmail>tq5124.web@gmail.com</authorEmail><!-- your email address -->
+	<authorUrl>tq5124.dongyueweb.com</authorUrl><!-- your url -->
+	<version>0.1</version><!-- give your template a number -->
 	<description><![CDATA[ 
-		<h1>frontend</h1>
-		<p>Created by <a href="http://www.example.com" target="_blank">your name | example.com</a>.</p>
+		<h1>joomla template for DyWeb</h1>
+		<p>welcome everyone to contribute!~</p>
 	]]></description><!-- change the description as you like -->
 	
 	<files><!-- no need to change -->
@@ -43,6 +43,14 @@
 	
 	<positions><!-- define the positions for modules here -->
 		<position>debug</position>
+		<position>header_menu</position>
+		<position>header_title</position>
+		<position>banner</position>
+		<position>left</position>
+		<position>right</position>
+		<position>center</position>
+		<position>bottom</position>
+		<position>footer</position>
 	</positions>
 	
 	<config><!-- no need to change -->
