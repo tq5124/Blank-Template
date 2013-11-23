@@ -24,12 +24,42 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php'; // load logic.php
   <![endif]-->
 </head>
   
-<body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('page')).' '.$active->alias.' '.$pageclass; ?>">
-  
-  <!-- 
-    YOUR CODE HERE
-  -->
-  <jdoc:include type="modules" name="debug" />
+<body style="padding-top: 70px;" class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('page')).' '.$active->alias.' '.$pageclass; ?>">
+	<jdoc:include type="modules" name="debug" />
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button data-target=".navbar-collapse" class="navbar-toggle" type="buton" data-toggle="collapse">
+					<span class="sr-only">Toggle</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="/" class="navbar-brand"><?php echo $sitename; ?></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<jdoc:include type="modules" name="header_menu" style="none" />
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-9">
+				<div class="jumbotron">
+					<h1>Hello, World!</h1>
+					<p>created by tq</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-3">
+				<div class="list-group">
+					<a href="" class="list-group-item">aaa</a>
+					<a href="" class="list-group-item">bbb</a>
+					<a href="" class="list-group-item">ccc</a>
+					<a href="" class="list-group-item">ddd</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

@@ -9,6 +9,7 @@ $menu = $app->getMenu();
 $active = $app->getMenu()->getActive();
 $pageclass = $params->get('pageclass_sfx');
 $tpath = $this->baseurl.'/templates/'.$this->template;
+$sitename = $app->getCfg('sitename');
 
 // parameter
 $modernizr = $this->params->get('modernizr');
@@ -91,7 +92,7 @@ if ($cssmethod=='css') :
   if ($foundation==1) $doc->addStyleSheet($tpath.'/css/foundation.min.css');
   if ($bootstrap==1) :
     $doc->addStyleSheet($tpath.'/css/bootstrap.min.css');
-    $doc->addStyleSheet($tpath.'/css/bootstrap-theme.min.css');
+    //$doc->addStyleSheet($tpath.'/css/bootstrap-theme.min.css');
     if ($fontawesome==1) $doc->addStyleSheet($tpath.'/css/font-awesome.min.css');
   endif;
 endif;

@@ -20,7 +20,7 @@ for($j=count($list)-1; $j>0; $j--){
 $first_start = true;
 ?>
 <?php // The menu class is deprecated. Use nav instead. ?>
-<ul class="nav menu<?php echo $class_sfx;?>"<?php
+<ul class="nav navbar-nav <?php echo $class_sfx;?>"<?php
 	$tag = '';
 	if ($params->get('tag_id') != null)
 	{
